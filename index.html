@@ -2,186 +2,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Prapti Juneja | Accounting & Finance Professional</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Prapti Juneja | Accounting & Finance Professional</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #222;
-        }
-        nav {
-            background: #111;
-            color: #fff;
-            padding: 15px 30px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        nav a {
-            color: #fff;
-            margin-right: 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        header {
-            background: #2563eb;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 42px;
-        }
-        header p {
-            font-size: 20px;
-            margin-top: 10px;
-        }
-        header .btn {
-            margin-top: 15px;
-            padding: 12px 25px;
-            background: white;
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 60px 20px;
-        }
-        .section-title {
-            font-size: 28px;
-            margin-bottom: 15px;
-            font-weight: bold;
-            color: #2563eb;
-        }
-        .card {
-            background: #fff;
-            padding: 22px;
-            border-radius: 8px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        footer {
-            background: #111;
-            color: #fff;
-            text-align: center;
-            padding: 15px;
-        }
-        @media(max-width: 600px) {
-            header h1 { font-size: 28px; }
-            nav a { margin-right: 10px; }
-        }
-    </style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+html { scroll-behavior: smooth; }
+
+body {
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:#fff;
+}
+
+/* NAVIGATION */
+nav {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    z-index:1000;
+}
+
+nav a {
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+}
+
+/* HERO */
+header {
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+header h1 {
+    font-size:52px;
+    margin:10px 0;
+}
+
+.highlight {
+    color:#60a5fa;
+}
+
+header p {
+    font-size:20px;
+    max-width:600px;
+}
+
+.btn {
+    margin-top:20px;
+    padding:12px 28px;
+    background:#60a5fa;
+    color:#000;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover {
+    background:#3b82f6;
+    color:#fff;
+}
+
+/* SECTIONS */
+section {
+    padding:100px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.section-title {
+    font-size:32px;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+/* CARDS */
+.card {
+    background:rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:30px;
+    transition:0.4s;
+}
+
+.card:hover {
+    transform:translateY(-5px);
+}
+
+ul {
+    padding-left:20px;
+}
+
+footer {
+    text-align:center;
+    padding:20px;
+    background:#000;
+    font-size:14px;
+}
+
+/* FADE ANIMATION */
+.fade-in {
+    opacity:0;
+    transform:translateY(30px);
+    transition:1s;
+}
+.fade-in.visible {
+    opacity:1;
+    transform:translateY(0);
+}
+
+@media(max-width:768px){
+    header h1 {font-size:32px;}
+    nav {padding:15px;}
+}
+</style>
 </head>
 
 <body>
 
-<!-- Navigation -->
 <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <div><b>PJ</b></div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </div>
 </nav>
 
-<!-- Hero Section -->
 <header>
-    <h1>Prapti Juneja</h1>
-    <p>Accounting & Finance Professional — Bookkeeping | AP/AR | Tax Preparation</p>
+    <h2>Hey there,</h2>
+    <h1>I am <span class="highlight">Prapti Juneja</span></h1>
+    <p>Accounting & Finance Professional specializing in Bookkeeping, AP/AR, Reconciliation & Canadian Tax Preparation.</p>
+    <a class="btn" href="resume.pdf" download>Download Resume</a>
     <a class="btn" href="mailto:praptijuneja04@gmail.com">Contact Me</a>
 </header>
 
-<!-- About Section -->
-<section id="about">
+<section id="about" class="fade-in">
     <div class="section-title">About Me</div>
     <div class="card">
-        I am a detail-oriented accounting graduate with practical experience in corporate cashiering, reconciliation, and Canadian tax preparation. Skilled with QuickBooks Online, Sage 50, and advanced Excel functions. I apply accuracy and professionalism to financial operations and am currently open to accounting & finance roles.
+        Detail-oriented accounting graduate with hands-on experience in high-volume financial transactions, tax preparation, and reconciliation. Skilled in QuickBooks Online, Sage 50, and advanced Excel functions. Passionate about financial accuracy, compliance, and operational efficiency.
     </div>
 </section>
 
-<!-- Skills / Expertise -->
-<section id="skills">
+<section id="skills" class="fade-in">
     <div class="section-title">Core Skills</div>
     <div class="card">
-        <ul>
-            <li>Accounts Payable & Accounts Receivable</li>
-            <li>Bank & Till Reconciliation</li>
-            <li>Journal Entries & 3-Way Matching</li>
-            <li>QuickBooks Online & Sage 50</li>
-            <li>CRA Tax Filing Procedures & Preparation</li>
-            <li>MS Excel (Pivot Tables, VLOOKUP)</li>
-        </ul>
+        • Accounts Payable & Receivable<br>
+        • Bank & Till Reconciliation<br>
+        • Journal Entries & 3-Way Matching<br>
+        • QuickBooks Online & Sage 50<br>
+        • CRA Tax Filing Procedures<br>
+        • MS Excel (Pivot Tables, VLOOKUP)
     </div>
 </section>
 
-<!-- Experience -->
-<section id="experience">
+<section id="experience" class="fade-in">
     <div class="section-title">Professional Experience</div>
 
     <div class="card">
-        <h3>Cashier – Costco Wholesale</h3>
-        <p><small>Jun 2023 – Present</small></p>
-        <ul>
-            <li>Handled cash and electronic transactions exceeding $10,000 daily.</li>
-            <li>Conducted end-of-day balancing and deposit reconciliation.</li>
-            <li>Resolved financial discrepancies and ensured accurate reporting.</li>
-        </ul>
+        <h3>Costco Wholesale</h3>
+        Managed transactions exceeding $10,000 daily and conducted end-of-day reconciliation with accuracy and compliance.
     </div>
 
     <div class="card">
-        <h3>Team Lead – Toronto Blue Jays</h3>
-        <p><small>Mar 2023 – Sep 2023</small></p>
-        <ul>
-            <li>Led and coordinated a team of 10–12 staff members.</li>
-            <li>Improved operational efficiency and reduced complaints.</li>
-        </ul>
+        <h3>Toronto Blue Jays</h3>
+        Led a team of 10–12 members, improving productivity and operational efficiency.
     </div>
 
     <div class="card">
-        <h3>Technical Sales Representative – Voysus Inc.</h3>
-        <p><small>Jan 2023 – May 2023</small></p>
-        <ul>
-            <li>Generated B2B leads with a 25% conversion rate.</li>
-            <li>Managed client onboarding and billing coordination.</li>
-        </ul>
+        <h3>CRA Community Volunteer Income Tax Program</h3>
+        Prepared and e-filed 15+ personal tax returns while ensuring CRA compliance and confidentiality.
     </div>
 </section>
 
-<!-- Projects / Volunteer Experience -->
-<section id="projects">
-    <div class="section-title">Projects & Volunteer Work</div>
-    <div class="card">
-        <h3>CRA Community Volunteer Income Tax Program — Tax Preparer</h3>
-        <ul>
-            <li>Prepared and e-filed 15+ personal tax returns.</li>
-            <li>Ensured CRA compliance and confidentiality.</li>
-        </ul>
-    </div>
-</section>
-
-<!-- Contact -->
-<section id="contact">
+<section id="contact" class="fade-in">
     <div class="section-title">Contact</div>
     <div class="card">
-        <p>Email: <a href="mailto:praptijuneja04@gmail.com">praptijuneja04@gmail.com</a></p>
-        <p>Phone: (437) 262-8776</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/prapti-juneja-a5873625b" target="_blank">linkedin.com/in/prapti-juneja-a5873625b</a></p>
-        <p>Location: Scarborough, ON</p>
+        Email: praptijuneja04@gmail.com<br>
+        Phone: (437) 262-8776<br>
+        LinkedIn: linkedin.com/in/prapti-juneja-a5873625b<br>
+        Location: Scarborough, ON
     </div>
 </section>
 
-<!-- Footer -->
 <footer>
-    © 2026 Prapti Juneja — All Rights Reserved
+© 2026 Prapti Juneja — Professional Portfolio
 </footer>
+
+<script>
+const faders = document.querySelectorAll('.fade-in');
+window.addEventListener('scroll', () => {
+    const triggerBottom = window.innerHeight * 0.85;
+    faders.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if(sectionTop < triggerBottom){
+            section.classList.add('visible');
+        }
+    });
+});
+</script>
 
 </body>
 </html>
